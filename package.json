@@ -62,6 +62,7 @@
     "core-js": "^3.6.5",
     "flyio": "^0.6.2",
     "regenerator-runtime": "^0.12.1",
+    "uni-ajax": "^2.2.8",
     "uni-simple-router": "^2.0.1",
     "uview-ui": "^1.8.4",
     "vue": "^2.6.11",

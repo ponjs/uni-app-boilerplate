@@ -11992,6 +11992,11 @@ unbox-primitive@^1.0.0:
     has-symbols "^1.0.2"
     which-boxed-primitive "^1.0.2"
 
+uni-ajax@^2.2.8:
+  version "2.2.8"
+  resolved "https://registry.yarnpkg.com/uni-ajax/-/uni-ajax-2.2.8.tgz#5f1cd9f7de41249546f457ce648bc85d10260eaa"
+  integrity sha512-+iop2/dpw6sBW42s7pdpY+3v8PJnKPB35xT+orKGJhBafIWOeccqLuvcOoHiFqhclQOWqi8m6E4l9OE3WPvTLw==
+
 uni-read-pages@^1.0.5:
   version "1.0.5"
   resolved "https://registry.yarnpkg.com/uni-read-pages/-/uni-read-pages-1.0.5.tgz#452c8dcaa8977bbaef600909be926c8d9704387c"

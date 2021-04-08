@@ -16,6 +16,11 @@ export default class Index extends Vue {
   get name() {
     return App.name
   }
+
+  async testApi() {
+    const { data } = await this.$apis.Test.test({ val: '' })
+    console.log(data)
+  }
 }
 </script>
 
