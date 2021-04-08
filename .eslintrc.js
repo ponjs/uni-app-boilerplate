@@ -3,6 +3,9 @@ module.exports = {
   env: {
     node: true
   },
+  globals: {
+    uni: true,
+  },
   extends: [
     'plugin:vue/essential',
     'eslint:recommended',
@@ -14,12 +17,15 @@ module.exports = {
     ecmaVersion: 2020
   },
   rules: {
-    'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
-    'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
-    'prettier/prettier': 'error',
+    '@typescript-eslint/explicit-module-boundary-types': 'off',
     '@typescript-eslint/no-empty-function': 'warn',
     '@typescript-eslint/no-empty-interface': 'off',
+    '@typescript-eslint/no-explicit-any': 'off',
+    '@typescript-eslint/no-namespace': 'off',
     '@typescript-eslint/no-var-requires': 'off',
-    'no-empty': 'warn'
+    'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
+    'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
+    'no-empty': 'warn',
+    'prettier/prettier': 'error',
   }
 }
