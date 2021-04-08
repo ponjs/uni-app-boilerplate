@@ -3,7 +3,7 @@ module.exports = {
   parser: require('postcss-comment'),
   plugins: [
     require('postcss-import')({
-      resolve (id, basedir, importOptions) {
+      resolve(id) {
         if (id.startsWith('~@/')) {
           return path.resolve(process.env.UNI_INPUT_DIR, id.substr(3))
         } else if (id.startsWith('@/')) {
