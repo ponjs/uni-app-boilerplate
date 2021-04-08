@@ -2,17 +2,20 @@
   <view class="flex flex-col items-center justify-center">
     <image class="logo" src="../../static/logo.png"></image>
     <view>
-      <text class="title text-36">{{ title }}</text>
+      <text class="title text-36">{{ name }}</text>
     </view>
   </view>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator'
+import { App } from '@/store'
 
 @Component
 export default class Index extends Vue {
-  title = 'Hello'
+  get name() {
+    return App.name
+  }
 }
 </script>
 

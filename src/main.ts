@@ -2,12 +2,15 @@ import Vue from 'vue'
 import App from './App.vue'
 import uview from 'uview-ui'
 import { RouterMount, router } from './router'
+import store from './store'
 
 Vue.use(router).use(uview)
 
 Vue.config.productionTip = false
 
-const app = new App()
+const app = new App({
+  store
+})
 
 // #ifdef H5
 RouterMount(app, router, '#app')
