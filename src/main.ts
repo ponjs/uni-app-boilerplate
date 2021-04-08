@@ -1,8 +1,9 @@
 import Vue from 'vue'
 import App from './App.vue'
+import uview from 'uview-ui'
 import { RouterMount, router } from './router'
 
-Vue.use(router)
+Vue.use(router).use(uview)
 
 Vue.config.productionTip = false
 
