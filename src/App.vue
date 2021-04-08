@@ -15,5 +15,5 @@ export default Vue.extend({
 </script>
 
 <style>
-/*每个页面公共css */
+@import url('tailwindcss/tailwind.css');
 </style>
