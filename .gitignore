@@ -22,3 +22,7 @@ yarn-error.log*
 *.njsproj
 *.sln
 *.sw*
+
+# package lock files
+package-lock.json
+yarn.lock
