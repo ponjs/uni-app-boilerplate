@@ -51,10 +51,7 @@ instance.interceptors.response.use(
     // 隐藏请求加载框
     loading.hide()
 
-    // 如果是中断请求
-    if (error.errMsg.includes('abort')) return config.catch ? error : pending
-
-    return config.catch ? error : pending
+    return config.catch ? Promise.reject(error) : pending
   }
 )
 
@@ -65,12 +62,9 @@ interface ResponseMessage<T = any> {
   data: T
 }
 
-type Request = <T = any>(
-  url: string,
-  data?: any,
-  config?: AjaxRequestConfig
-) => AjaxPromise<ResponseMessage<T>>
-
-export const { get, post } = instance as Record<'get' | 'post', Request>
+export const { get, post } = instance as Record<
+  'get' | 'post',
+  <T = any>(url: string, data?: any, config?: AjaxRequestConfig) => AjaxPromise<ResponseMessage<T>>
+>
 
 export default instance
