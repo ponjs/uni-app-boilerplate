@@ -17,4 +17,5 @@ export default Vue.extend({
 <style lang="scss">
 @import 'tailwindcss/tailwind.css';
 @import 'uview-ui/index.scss';
+@import './styles/globals.scss';
 </style>
