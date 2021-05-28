@@ -4,7 +4,9 @@ module.exports = {
     node: true
   },
   globals: {
-    uni: true,
+    ROUTES: true,
+    UniApp: true,
+    uni: true
   },
   extends: [
     'plugin:vue/essential',
@@ -18,7 +20,7 @@ module.exports = {
   },
   rules: {
     '@typescript-eslint/explicit-module-boundary-types': 'off',
-    '@typescript-eslint/no-empty-function': 'warn',
+    '@typescript-eslint/no-empty-function': 'off',
     '@typescript-eslint/no-empty-interface': 'off',
     '@typescript-eslint/no-explicit-any': 'off',
     '@typescript-eslint/no-namespace': 'off',
@@ -26,6 +28,6 @@ module.exports = {
     'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
     'no-empty': 'warn',
-    'prettier/prettier': 'error',
+    'prettier/prettier': 'error'
   }
 }
