@@ -4,8 +4,9 @@ import uview from 'uview-ui'
 import { RouterMount, router } from './router'
 import store from './store'
 import apis from './apis'
+import utils from './common/utils'
 
-Vue.use(router).use(uview).use(apis)
+Vue.use(router).use(uview).use(apis).use(utils)
 
 Vue.config.productionTip = false
 

@@ -1,6 +1,7 @@
 import { ComponentOptions } from 'vue'
 import { RoutesRule } from 'uni-simple-router'
 import { Apis } from './apis'
+import { Utils } from './common/utils'
 
 declare module 'vue/types/vue' {
   interface Vue extends ComponentOptions<Vue> {
@@ -8,6 +9,8 @@ declare module 'vue/types/vue' {
     $u: any
     /** API Management */
     $apis: Apis
+    /** Util Methods */
+    $utils: Utils
   }
 }
 
