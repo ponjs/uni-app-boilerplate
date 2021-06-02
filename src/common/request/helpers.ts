@@ -32,7 +32,7 @@ export function offlineModal() {
     content: '请检查网络是否正常',
     confirmText: '我知道了',
     showCancel: false,
-    success: () => (offlineModal.show = false)
+    success: ({ confirm }) => (offlineModal.show = !confirm)
   })
 }
 /** 无网络模态框显示状态，避免出现多个模态框 */
