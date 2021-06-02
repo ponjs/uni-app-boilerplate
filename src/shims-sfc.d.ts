@@ -21,7 +21,7 @@ declare module 'uni-ajax' {
     loading?: boolean
     /** 发起请求 800ms 后显示 loading 提示框的文字。默认：加载中 */
     loadingText?: string
-    /** 返回 code !== 200 时，是否 toast 提示 code !== 200 时的 msg 信息。默认：true */
+    /** 返回 code !== 0 时，是否 toast 提示 code !== 0 时的 msg 信息。默认：true */
     toast?: boolean
     /** 是否返回异常，如果是 true，则异常数据需用 catch 捕捉，否则不返回异常数据。默认：false */
     catch?: boolean
