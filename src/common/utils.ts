@@ -59,13 +59,8 @@ export function loading(title = '加载中', mask = true) {
   })
 }
 
-const utils = {
-  toast,
-  modal,
-  loading,
-  install: (app: VueConstructor) => (app.prototype.$utils = utils)
+/** 导出 Vue.use 调用方法 */
+export function install(app: VueConstructor) {
+  // 挂载实例方法后 需在 shims-sfc.d.ts 里声明该方法类型
+  app.prototype.$util = module.exports
 }
-
-export declare type Utils = typeof utils
-
-export default utils
