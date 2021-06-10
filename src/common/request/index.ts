@@ -59,7 +59,9 @@ instance.interceptors.response.use(
 )
 
 // 请求队列中赋值 url 的 RequestTask 类型
-type CustomTask = AjaxRequestTask & { url?: string }
+interface CustomTask extends AjaxRequestTask {
+  url?: string
+}
 
 // 接口实际返回数据类型
 interface CustomResponse<T = any> {
