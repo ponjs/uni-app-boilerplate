@@ -15,7 +15,7 @@ declare module 'vue/types/vue' {
 }
 
 declare global {
-  const ROUTES: RoutesRule[]
+  declare const ROUTES: RoutesRule[]
 }
 
 declare module 'uni-ajax' {

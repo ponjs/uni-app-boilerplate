@@ -4,9 +4,9 @@ module.exports = {
     node: true
   },
   globals: {
-    ROUTES: true,
-    UniApp: true,
-    uni: true
+    ROUTES: 'readonly',
+    UniApp: 'readonly',
+    uni: 'readonly'
   },
   extends: [
     'plugin:vue/essential',
