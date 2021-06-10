@@ -9,12 +9,12 @@
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator'
-import { App } from '@/store'
+import { AppModule } from '@/store'
 
 @Component
 export default class Index extends Vue {
   get name() {
-    return App.name
+    return AppModule.name
   }
 
   async testApi() {
